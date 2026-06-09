@@ -20,7 +20,7 @@ export default function LandingPage() {
           href="tel:8014776120" 
           className="bg-[#1e3a58] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#152a42] transition shadow-md"
         >
-          Call (801) 477-6120
+          Call or Text (801) 477-6120
         </a>
       </nav>
 
@@ -29,51 +29,36 @@ export default function LandingPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Fast, Reliable Junk Removal<br/>in Payson & Utah County
         </h1>
-        <p className="text-lg text-slate-600">Residential & Commercial services with an easy online process.</p>
+        <p className="text-lg text-slate-600">Residential & Commercial.</p>
+
+        <p className="text-lg text-slate-600">We are here to help get that valuable space back!</p>
       </header>
 
       {/* Lead Form Card */}
-      <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 w-full max-w-lg mb-12">
-        <form className="space-y-4">
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium mb-1">Your Name *</label>
-              <input type="text" className="w-full p-3 border rounded-lg" required />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-1">Phone Number *</label>
-              <input type="tel" className="w-full p-3 border rounded-lg" required />
-            </div>
-          </div>
-          
-          <input type="text" placeholder="Payson or Zip Code" className="w-full p-3 border rounded-lg" />
-          <textarea placeholder="Description of Junk (Optional)" className="w-full p-3 border rounded-lg h-24" />
-          
-          <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 text-center cursor-pointer hover:bg-slate-50">
-            <p className="text-slate-500">📷 Add a photo of your junk (Optional)</p>
-          </div>
-          
-          <a 
-            href="YOUR_GOOGLE_FORM_LINK_HERE" 
-            target="_blank" 
-            className="w-full bg-[#1e3a58] text-white py-4 rounded-lg font-bold text-lg hover:bg-[#152a42] text-center block">
-            Get a Quote
-          </a>
-        </form>
+      <div className="w-full max-w-2xl mx-auto my-12 p-6 bg-white rounded-2xl shadow-xl border border-gray-100">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfvBqMgKQ7wQLzr8QwsnDm_C2UP3bvilOdNBicxyi-IG6TmcQ/viewform?embedded=true" 
+          width="100%" 
+          height="1000" 
+          frameBorder="0" 
+          className="border-none">
+        </iframe>
       </div>
+
+      
 
       {/* Value Props */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-4xl w-full mb-12">
         <div className="p-4">🚚 <p className="font-semibold">We handle bulky items, garage cleanouts, etc.</p></div>
         <div className="p-4">📍 <p className="font-semibold">Proudly serving Payson, Spanish Fork, Provo & surrounding areas.</p></div>
-        <div className="p-4">🏷️ <p className="font-semibold">Affordable, transparent pricing.</p></div>
+        <div className="p-4">🏷️ <p className="font-semibold">Affordable, transparent pricing. Just send a few photos via text and we'll get back to you.</p> <p className="font-semibold">Thank you!</p></div>
       </section>
 
       {/* Footer */}
       <footer className="border-t w-full max-w-4xl pt-6 text-center text-slate-500 text-sm">
         <div className="space-x-4 mb-2">
-          <a href="#" className="hover:underline">FAQ</a>
-          <a href="#" className="hover:underline">Contact</a>
+          {/* <a href="#" className="hover:underline">FAQ</a>
+          <a href="#" className="hover:underline">Contact</a> */}
         </div>
         <p>© 2026 Cornerstone Junk Removal. Utah County.</p>
       </footer>

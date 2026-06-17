@@ -49,21 +49,21 @@ export default function LandingPage() {
       
 
       {/* Value Props */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-4xl w-full mb-12">
-        <div className="p-4">🚚 <p className="font-semibold">We handle bulky items, garage cleanouts, etc.</p></div>
-        <div className="p-4">📍 <p className="font-semibold">Proudly serving Payson, Spanish Fork, Provo & surrounding areas.</p></div>
-        <div className="p-4">🏷️ <p className="font-semibold">Affordable, transparent pricing. Just send a few photos via text and we'll get back to you.</p> <p className="font-semibold">Thank you!</p></div>
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-4xl w-full mt-6">
+        <div className="p-4"><div className="text-2xl pb-2">🚚</div> <p className="font-semibold">We handle bulky items, garage cleanouts, etc.</p></div>
+        <div className="p-4"><div className="text-2xl pb-2">📍</div> <p className="font-semibold">Proudly serving Payson, Spanish Fork, Provo & surrounding areas.</p></div>
+        <div className="p-4"><div className="text-2xl pb-2">🏷️ </div><p className="font-semibold">Affordable, transparent pricing. Just send a few photos via text and we'll get back to you.</p> <p className="font-semibold">Thank you!</p></div>
       </section>
       {/* Bio */}
       <section className='w-full max-w-2xl mx-auto my-12 p-6 flex flex-col items-center text-center'>
         <h3 className="text-4xl md:text-3xl font-bold text-slate-900 mb-4">Why We Started Cornerstone</h3>
         <Image 
-          src="/my_truck.jpg" 
+          src="/me_with_truck_2.jpg" 
           alt="Cornerstone Junk Removal" 
-          width={200} 
-          height={150} 
-          className="p-6"
-        />
+          width={300} 
+          height={100} 
+          className="mb-6 object-cover rounded-xl border-8 border-white shadow-2xl"
+        />        
         <p className="font-semibold">Cornerstone Junk Removal was founded on the belief that every successful project begins with a solid foundation. Whether you're preparing a home for sale, cleaning out a garage, making room for a growing family, or simply reclaiming your space, we're here to help.</p>
 
         <p className="font-semibold">As a locally owned family business in Payson, Utah, we take pride in serving our neighbors throughout Utah County with reliable service, honest pricing, and hard work.</p>  

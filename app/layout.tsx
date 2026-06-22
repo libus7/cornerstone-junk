@@ -3,8 +3,35 @@ import "./globals.css";
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Cornerstone Junk Removal LLC",
+                "image": "https://www.cornerstonejunkremovalut.com/logo.png",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Payson",
+                  "addressRegion": "UT",
+                  "addressCountry": "US"
+                },
+                "url": "https://www.cornerstonejunkremovalut.com",
+                "telephone": "8014776120",
+                "priceRange": "$$",
+                "areaServed": {
+                  "@type": "AdministrativeArea",
+                  "name": "Utah County"
+                }
+              }),
+            }}
+          />
+      </head>
       <body className="bg-slate-50 text-slate-900">
-        <header></header>
+        <header>
+        </header>
         
         <main>{children}</main>
         
